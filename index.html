@@ -28,7 +28,7 @@ SOFTWARE.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlowBomb</title>
-    <link rel="icon" href="icon.gif" type="image/gif">
+    <link rel="icon" href="icon_static.gif" type="image/png">
   <meta name="description" content="GlowBomb - Minecraft Server Message / MOTD Designer">    
   <meta property="og:title" content="GlowBomb">
   <meta property="og:description" content="GlowBomb - Minecraft Server Message / MOTD Designer">
@@ -303,14 +303,27 @@ SOFTWARE.
             padding: 10px 15px;
         }
     }
+    .title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    
+    .title-icon {
+        height: 100px;
+    }        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title-container">
-            <h1>GlowBomb</h1>
-            <div class="subtitle">Minecraft Server Message Designer</div>
-        </div>
+    <div class="title-wrapper">
+        <img src="https://glowbomb.esb.is-a.dev/icon.gif" alt="GlowBomb Icon" class="title-icon">
+        <h1>GlowBomb</h1>
+    </div>
+    <div class="subtitle">Minecraft Server Message Designer</div>
+</div>
         
         <div class="editor-section">
             <textarea id="motd-input" placeholder="Enter your server's MOTD here..."></textarea>
